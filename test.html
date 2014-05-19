@@ -1,0 +1,19 @@
+<HTML>
+<SCRIPT TYPE="text/javascript" LANGUAGE="JavaScript" SRC="xmlparser.js"></SCRIPT>
+<BODY>
+	<SCRIPT type="text/javascript" language="JavaScript">
+		
+		xmlstr='<ELEMENT attribute="attributedata">	elementdata	<CHILD_ELEMENT/></ELEMENT>';
+		document.write('the xml string:<xmp>' + xmlstr + '</xmp><p>')
+		
+		document.write('use  : getData(xmlstr, "ELEMENT/")<BR>')
+		document.write('result:' + getData(xmlstr, "ELEMENT/") +'<P>');
+
+		document.write('use  : getAttribute(xmlstr, "ELEMENT/attribute")<BR>')
+		document.write('result:' + getAttribute(xmlstr, "ELEMENT/attribute"));
+
+		
+	</SCRIPT>
+</BODY>
+
+</HTML>
